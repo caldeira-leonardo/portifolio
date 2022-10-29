@@ -4,7 +4,7 @@ import Header from 'components/Header/Header'
 import { ThemeContext } from 'context/ThemeContext'
 import { useContext } from 'react'
 
-const ExamplesComponent = (props: any) => {
+const Examples = (props: any) => {
     const { theme, setTheme } = useContext(ThemeContext)
 
     return (
@@ -44,4 +44,4 @@ const ExamplesComponent = (props: any) => {
     )
 }
 
-export default ExamplesComponent
+export default Examples
