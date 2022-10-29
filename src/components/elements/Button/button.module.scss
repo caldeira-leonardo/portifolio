@@ -1,0 +1,21 @@
+@use '../../../theme/colors.scss' as *;
+@use '../../../theme/sizes.scss' as *;
+
+.buttonContainer {
+    box-sizing: border-box;
+    width: unset;
+    border-radius: 4px;
+    padding: 8px;
+
+    &.fullWidth {
+        width: 100%;
+    }
+
+    &.light {
+        background-color: $light-800;
+    }
+
+    &.dark {
+        background-color: $primary;
+    }
+}

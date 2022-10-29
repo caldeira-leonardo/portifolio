@@ -1,5 +1,12 @@
+import ExamplesComponent from 'components/Examples/Examples'
+import './app.scss'
+
 function App() {
-  return <div>Hello World</div>;
+    return (
+        <>
+            <ExamplesComponent />
+        </>
+    )
 }
 
-export default App;
+export default App

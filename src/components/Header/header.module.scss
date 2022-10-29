@@ -1,0 +1,10 @@
+@use '../../theme/colors.scss' as *;
+@use '../../theme/sizes.scss' as *;
+
+.headerContainer {
+    padding: 10px;
+
+    &.light {
+        background-color: $gray-400;
+    }
+}

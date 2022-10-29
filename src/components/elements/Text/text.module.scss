@@ -1,0 +1,38 @@
+@use '../../../theme/colors.scss' as *;
+@use '../../../theme/sizes.scss' as *;
+
+.textContainer {
+    width: 100%;
+
+    &.light {
+        color: $primary;
+    }
+
+    &.dark {
+        color: $light-800;
+    }
+
+    &.smaller {
+        font-size: $smaller;
+    }
+
+    &.small {
+        font-size: $small;
+    }
+
+    &.normal {
+        font-size: $normal;
+    }
+
+    &.medium {
+        font-size: $medium;
+    }
+
+    &.large {
+        font-size: $large;
+    }
+
+    &.largest {
+        font-size: $largest;
+    }
+}
