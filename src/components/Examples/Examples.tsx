@@ -2,6 +2,7 @@ import Button from 'components/elements/Button/Button'
 import Text from 'components/elements/Text/Text'
 import Header from 'components/Header/Header'
 import { ThemeContext } from 'context/ThemeContext'
+import { i18n } from 'translate/i18n'
 import { useContext } from 'react'
 
 const Examples = (props: any) => {
@@ -10,7 +11,6 @@ const Examples = (props: any) => {
     return (
         <>
             <Header />
-            <div className={theme}>Hello Worlddd</div>
             <Text size="smaller">{'smaller'}</Text>
             <Text size="small">{'small'}</Text>
             <Text size="normal">{'normal'}</Text>
@@ -40,6 +40,11 @@ const Examples = (props: any) => {
             <Button fullWidth onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                 Full Width
             </Button>
+
+            <h1>{i18n.t('Minha Aplicação')}</h1>
+            <h1>{i18n.t('Está funcionando com n Idiomas')}</h1>
+            <h1>{i18n.t('Um pequeno texto')}</h1>
+            <h1>{i18n.t('salvar')}</h1>
         </>
     )
 }
