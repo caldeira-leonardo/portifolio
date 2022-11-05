@@ -15,5 +15,4 @@ export interface ButtonI {
 export interface HeaderI {
     size?: 'smaller' | 'small' | 'normal' | 'medium' | 'large' | 'largest'
     style?: React.CSSProperties
-    fullWidth?: boolean
 }
