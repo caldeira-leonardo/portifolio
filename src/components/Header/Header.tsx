@@ -5,6 +5,7 @@ import { HeaderI } from 'utils/interfaces'
 import styles from './header.module.scss'
 import darkMode from 'components/assets/icons/darkMode.png'
 import lightMode from 'components/assets/icons/lightMode.png'
+import Flag from 'react-world-flags'
 
 const I18N_STORAGE_KEY = 'i18nextLng'
 
@@ -22,9 +23,18 @@ const Header = (props: HeaderI) => {
             header Header
             <div className={styles.selectsWrapper}>
                 <select onChange={handleSelectLanguage} value={language}>
-                    <option value="pt-BR">Portugues</option>
-                    <option value="en-US">English</option>
-                    <option value="es-ES">Español</option>
+                    <option value="pt-BR">
+                        <Flag code="br" height="16" />
+                        Portugues
+                    </option>
+                    <option value="en-US">
+                        <Flag code="us" height="16" />
+                        English
+                    </option>
+                    <option value="es-ES">
+                        <Flag code="es" height="16" />
+                        Español
+                    </option>
                 </select>
 
                 <label className={styles.switchWrapper}>
