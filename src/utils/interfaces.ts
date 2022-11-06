@@ -16,3 +16,18 @@ export interface HeaderI {
     size?: 'smaller' | 'small' | 'normal' | 'medium' | 'large' | 'largest'
     style?: React.CSSProperties
 }
+
+export interface SelectI {
+    style?: React.CSSProperties
+    options: any[]
+    key: string
+    render: any
+    defaultOptionKey: string
+}
+
+export interface LanguegesI {
+    name: string
+    handleLanguage(): void
+    flagCode: string
+    key: string
+}

@@ -2,7 +2,7 @@ import { ThemeContext } from 'context/ThemeContext'
 import { useContext } from 'react'
 import { ButtonI } from 'utils/interfaces'
 import Text from 'components/elements/Text/Text'
-import styles from './button.module.scss'
+import './button.scss'
 
 const Button = (props: ButtonI) => {
     const { children, style, size, onClick, fullWidth } = props
@@ -10,9 +10,7 @@ const Button = (props: ButtonI) => {
 
     return (
         <button
-            className={`${styles.buttonContainer} ${styles[fullWidth && 'fullWidth']} ${styles[size || 'normal']} ${
-                styles[theme]
-            } `}
+            className={`buttonContainer ${fullWidth && 'fullWidth'} ${size || 'normal'} ${theme} `}
             style={style}
             onClick={onClick}
         >

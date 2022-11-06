@@ -1,0 +1,39 @@
+@use '../../../theme/colors.scss' as *;
+@use '../../../theme/sizes.scss' as *;
+
+.selectWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 10px;
+
+    .selectedOptionWrapper {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: $gray-100;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 4px 8px;
+        position: relative;
+
+        .optionWrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            img {
+                width: 20px;
+                max-width: 20px;
+            }
+
+            .optionTitle {
+                padding: 0 0 0 5px;
+                margin: 0;
+            }
+        }
+    }
+
+    .selectOptions {
+        position: absolute;
+    }
+}
