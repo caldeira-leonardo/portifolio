@@ -10,6 +10,7 @@ export const NavbarWrapper = styled.div`
     background-color: ${colors.light};
 
     box-shadow: 0 10px 100px #00000010;
+    z-index: 100;
 `
 
 export const NavbarContent = styled.div`
@@ -20,11 +21,13 @@ export const NavbarContent = styled.div`
     padding: 10px 60px;
 `
 
-export const UserInfos = styled.div`
-    width: 100%;
+export const UserInfos = styled.a.attrs({
+    href: "./",
+})`
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 `
 
 export const UserImage = styled.div`
@@ -42,6 +45,8 @@ export const UserNameTitle = styled.h3.attrs({
     letter-spacing: 1px;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none !important;
+    color: ${colors.title_primary};
 `
 
 export const OptionsWrapper = styled.div``
@@ -55,6 +60,11 @@ export const Link = styled.a`
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 25px;
+
+    -webkit-transition: color 100ms linear;
+    -moz-transition: color 100ms linear;
+    -o-transition: color 100ms linear;
+    transition: color 100ms linear;
 
     &:hover {
         color: ${colors.primary};
