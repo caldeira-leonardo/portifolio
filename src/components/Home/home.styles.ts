@@ -21,17 +21,3 @@ export const HomeContent = styled.div`
     flex-direction: column;
     text-align: center;
 `
-
-export const HomeTitle = styled.h1`
-    font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 3px;
-    margin: 0;
-`
-
-export const HomeSubtitle = styled.p`
-    font-size: 24px;
-    line-height: 36px;
-    margin: 45px 0;
-`
