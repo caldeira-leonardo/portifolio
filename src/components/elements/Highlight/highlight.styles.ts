@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 import { colors } from "theme/theme"
 
-export const HighlightContent = styled.span<{ color?: string }>`
+export const HighlightContent = styled.span`
     font-weight: bold;
-    color: ${({ color }) => (color ? color : colors.text_subtitle)};
+    color: ${colors.text_subtitle};
 `

@@ -10,8 +10,8 @@ const Home = () => {
         <HomeWrapper id="home" $bg={backgroundImage}>
             <HomeContent>
                 <Title>Olá, me chamo Leonardo Caldeira</Title>
-                <Subtitle>Um desenvolvedor Web adepto especializado em Frontend, construindo sites cativantes e aplicativos móveis que trazem a imaginação à VIDA.</Subtitle>
-                <Button>Projetos</Button>
+                <Subtitle>Um desenvolvedor Web especializado em Front-end, construindo sites cativantes e aplicativos móveis que trazem a imaginação à VIDA.</Subtitle>
+                <Button href='./#projects'>Projetos</Button>
             </HomeContent>
         </HomeWrapper>
     );

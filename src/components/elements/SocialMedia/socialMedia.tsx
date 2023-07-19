@@ -2,8 +2,7 @@ import { SocialMediaImage, SocialMediaLink, SocialMediaWrapper } from "./socialM
 import github from 'assets/github.png';
 import linkedin from 'assets/linkedin.png';
 
-const SocialMedia = (props: any) => {
-
+const SocialMedia = () => {
     return (
         <SocialMediaWrapper>
             <SocialMediaLink href="https://github.com/caldeira-leonardo" target="_blank">

@@ -1,14 +1,21 @@
-import Subtitle from "../Subtitle/subtitle";
+import { ReactNode } from "react";
 import Title from "../Title/title";
-import { InfoSectionsWrapper, Separator } from "./userInfosSections.style";
+import { InfoSectionsWrapper, SectionSubtitle, Separator } from "./userInfosSections.style";
 
-const UserInfosSections = ({ title, subtitle, id, children }: any) => {
+interface UserInfosSectionsProps {
+    children: ReactNode;
+    title: string,
+    subtitle: string,
+    id: string;
+}
+
+const UserInfosSections = ({ title, subtitle, id, children }: UserInfosSectionsProps) => {
 
     return (
         <InfoSectionsWrapper id={id}>
             <Title fontSize={40}>{title}</Title>
             <Separator />
-            <Subtitle margin="20px 0" fontSize={18} maxWidth={700}>{subtitle}</Subtitle>
+            <SectionSubtitle >{subtitle}</SectionSubtitle>
             {children}
         </InfoSectionsWrapper>
     );

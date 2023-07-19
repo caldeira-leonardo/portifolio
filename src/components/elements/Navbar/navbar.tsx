@@ -1,7 +1,6 @@
 import { Link, NavbarContent, NavbarWrapper, OptionsWrapper, UserImage, UserInfos, UserNameTitle } from './navbar.style';
 
-const Navbar = (props: any) => {
-
+const Navbar = () => {
     return (
         <NavbarWrapper>
             <NavbarContent>

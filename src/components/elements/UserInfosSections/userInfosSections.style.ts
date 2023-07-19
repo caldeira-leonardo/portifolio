@@ -19,3 +19,12 @@ export const Separator = styled.span`
     border-radius: 3px;
     margin: 20px;
 `
+
+export const SectionSubtitle = styled.p`
+    font-size: 18px;
+    line-height: 36px;
+    margin: 20px 0;
+    max-width: 700px;
+    text-align: center;
+    color: ${colors.text_subtitle};
+`

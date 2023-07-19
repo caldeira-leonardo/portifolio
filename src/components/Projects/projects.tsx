@@ -1,7 +1,6 @@
 import UserInfosSections from "components/elements/UserInfosSections/UserInfosSections";
 
-const Projects = (props: any) => {
-
+const Projects = () => {
     return (
         <div>
             <UserInfosSections

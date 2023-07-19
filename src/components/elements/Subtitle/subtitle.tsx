@@ -1,9 +1,14 @@
+import { ReactNode } from "react";
 import { SubtitleWrapper } from "./subtitle.styles";
 
-const Subtitle = ({ children, margin, fontSize, maxWidth }: any) => {
+interface SubtitleProps {
+    children: ReactNode,
+}
+
+const Subtitle = ({ children }: SubtitleProps) => {
 
     return (
-        <SubtitleWrapper margin={margin} fontSize={fontSize} maxWidth={maxWidth}>
+        <SubtitleWrapper >
             {children}
         </SubtitleWrapper>
     );

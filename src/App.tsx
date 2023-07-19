@@ -1,4 +1,6 @@
 import About from 'components/About/about';
+import Contact from 'components/Contact/contact';
+import Footer from 'components/Footer/footer';
 import Home from 'components/Home/home';
 import Projects from 'components/Projects/projects';
 import Navbar from 'components/elements/Navbar/navbar';
@@ -11,6 +13,8 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Contact />
+      <Footer />
       <SocialMedia />
     </div>
   );

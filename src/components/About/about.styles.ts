@@ -7,7 +7,9 @@ export const AboutContentWrapper = styled.div`
     gap: 130px;
 `
 
-export const KnowMeWrapper = styled.div``
+export const KnowMeWrapper = styled.div`
+    text-align: justify;
+`
 
 export const SkillsWrapper = styled.div``
 

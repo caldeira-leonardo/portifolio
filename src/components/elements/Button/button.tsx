@@ -1,10 +1,16 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { ButtonContent } from './button.style';
 
-const Button = ({ children }: any) => {
+interface ButtonProps {
+    children: ReactNode;
+    href?: string;
+    onClick?(): void;
+}
+
+const Button = ({ children, href, onClick }: ButtonProps) => {
 
     return (
-        <ButtonContent>
+        <ButtonContent href={href} onClick={onClick}>
             {children}
         </ButtonContent>
     );

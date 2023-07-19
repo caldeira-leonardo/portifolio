@@ -3,7 +3,7 @@ import { colors } from "theme/theme"
 
 export default createGlobalStyle`
   * {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: ${colors.title_primary}
   }
   
@@ -21,7 +21,7 @@ export default createGlobalStyle`
   }
 
   section {
-    height: calc(100vh - 180px);
+    min-height: calc(100vh - 180px);
     padding: 90px 0;
     background-color: ${colors.background_light};
     

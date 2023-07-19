@@ -1,6 +1,12 @@
+import { ReactNode } from "react";
 import { TitleWrapper } from "./title.styles";
 
-const Title = ({ children, fontSize }: any) => {
+interface TitleProps {
+    children: ReactNode,
+    fontSize?: number;
+}
+
+const Title = ({ children, fontSize }: TitleProps) => {
 
     return (
         <TitleWrapper fontSize={fontSize}>
