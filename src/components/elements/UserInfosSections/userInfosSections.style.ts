@@ -12,6 +12,7 @@ export const InfoSectionsWrapper = styled.section`
 `
 
 export const Separator = styled.span`
+    min-height: 6px;
     height: 6px;
     width: 30px;
     background-color: ${colors.primary};

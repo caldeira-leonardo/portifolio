@@ -24,6 +24,11 @@ export default createGlobalStyle`
     height: calc(100vh - 180px);
     padding: 90px 0;
     background-color: ${colors.background_light};
+    
+    background: linear-gradient(
+            180deg,
+            rgba(245, 245, 245, 0.3),
+            rgba(245, 245, 245, 0.9));
   }
 
 
