@@ -5,6 +5,7 @@ export const colors = {
     title_primary: "#111",
     text_subtitle: "#555",
     light_grey: "#999999",
+    light_grey_transparent: "#99999930",
     grey: "#666",
     black: "#000",
     light: "#fff",

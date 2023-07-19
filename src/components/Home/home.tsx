@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <HomeWrapper id="home" $bg={backgroundImage}>
             <HomeContent>
-                <Title>Hey, i'm Leonardo Caldeira</Title>
-                <Subtitle>An adept Web Developer specializing in Frontend, constructing captivating Websites and Mobile applications that bring the imagination to LIFE.</Subtitle>
-                <Button>Projects</Button>
+                <Title>Olá, me chamo Leonardo Caldeira</Title>
+                <Subtitle>Um desenvolvedor Web adepto especializado em Frontend, construindo sites cativantes e aplicativos móveis que trazem a imaginação à VIDA.</Subtitle>
+                <Button>Projetos</Button>
             </HomeContent>
         </HomeWrapper>
     );

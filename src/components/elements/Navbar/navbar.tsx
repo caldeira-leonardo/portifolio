@@ -11,9 +11,9 @@ const Navbar = (props: any) => {
                 </UserInfos>
                 <OptionsWrapper>
                     <Link href='./#'>Home</Link>
-                    <Link href='./#about'>About</Link>
-                    <Link href='./#projects'>Projects</Link>
-                    <Link href='./#contact'>Contact</Link>
+                    <Link href='./#about'>Sobre</Link>
+                    <Link href='./#projects'>Projetos</Link>
+                    <Link href='./#contact'>Contato</Link>
                 </OptionsWrapper>
             </NavbarContent>
         </NavbarWrapper>
